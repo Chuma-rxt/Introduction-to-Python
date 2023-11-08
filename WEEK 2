@@ -1,0 +1,80 @@
+Day 1									27 0ctober 2023
+Control flow statements
+A program’s control flow in the order in which the program’s code executes.
+Python has 3 control structures:
+	Sequential – default mode
+	Selection – used for decisions and branching
+	Repetition – used for looping i.e repeating a piece of code multiple times
+Sequential
+Sequential statements are a set of statements whose execution process happens in a sequence.
+Selection
+Selection are also known as Decision control or Branching statements
+The selection statements allows a program to test several conditions and execute instructions based on which condition is true.
+Some of the Decision control statements are:
+	Simple if: a simple if only has one condition to check
+	if-else:  if-else evaluates the condition and will executed the body of if, if the test condition is true, but if the condition is false, then the body of else is executed.
+	nested if: nested if statements are an if statements inside another if statement.
+	if-elif-else: the if-elif-else statement is used to conditionally execute a statement or a block of statements
+Repetition
+A repetition statement is used to repeat a group(block) of programming instructions.
+So in Python we have 2 loops/repetitive statements:
+	for loop: a loop is used to iterate over a sequence that is either a list, tuple, dictionary, or a set.
+	While loop: the while loops are used to execute a block of statements repeatedly until a given condition is satisfied.
+
+
+
+
+Day 2
+Introduction to Functions
+A function is a reusable block of code that performs a specific task or a set of tasks. Functions are essential concept in programming and play a central role in structuring and organizing code.
+So to create a function, you must use the def keyword, followed by the function name and a pair of parantheses.
+Using Functions
+Function syntax:
+def function_name(parameter <,…>:
+   #suite
+The function_name part is name used to call a function. The parameter part shows that zero or more parameters can be given to a function. The suite part is where the function is coded.
+When the return statement is included in the function’s suite, it means a function returns a result, and the return statement can be used to break out of a function.
+Three types of functions in Python:
+	Ordinary functions: are functions that follow mathematical procedures. They will receive an argument, perform a specific calculation with the argument, and return a result
+	Procedure functions: functions that normally do not return a result, they are called to execute a procedure.
+	Factory functions: functions that do not take parameters.
+Variables that are declared inside a function are called local variables, they are local to the function in which they are declared and cannot be accessed by other functions.
+The Random Module
+The basic random() function generates a random floating point number as output.
+Recursive Functions
+Recursion in programming is a method where the solution to a problem depends on the same solution’s result. A recursive function calls itself when it is executed.
+
+
+Fibonacci recursive function:
+This is a Python Function that calculates the Fibonacci sequence using a recursive algorithm. The Fibonacci sequence is a series of numbers where each number is the sum of the two preceding ones, typically 
+
+Day 3 								30 October 2023
+Introduction To Modules
+A module is a file containing Python code that defines a variables, functions, and classes. Modules allow you to organize your code into separate files, making it more manageable and easier to maintain.
+Modules bind the code and reduce the repetitions of functions frequently used in the code. It makes the code much clear and easy to understand.
+To create a module, you typically save your Python code in a .py file with the same names as the modele e.g my_module.py
+Mechanism of Python Modules
+The mechanism of python modules is a fundamental part of how the code is organized and made reusable. Breaking your code into modular units, you can develop more maintainable and efficient Python programs.
+Importing Modules
+Syntax: import module_name  
+       e.g import math
+Difference between a module and a package in Python:
+Python Module: These are set of pre-defined files that contain the python codes which depict the basic functionalities of class, methods, variables, etc.
+Python Package: It is a directory that holds and contains modules and sub-packages.
+
+Day 4							01 November 2023
+Introduction to Regular Expressions
+Regular expression are compact way of representing a collection of strings. The way  Python communicates and creates expressions is done with re module.
+Regexes are used for five reasons:
+•	Parsing: Identifying and extracting pieces of text that match certain criteria.
+•	Searching: Locating substrings that can have more than one form like:  ‘pet.png’, ‘pet.gif’, ‘pet.mpg’ while avoiding ‘carpet.gif’. 
+•	Searching and replacing: find substrings and replace  specified words within the matched strings.
+•	Splitting strings: splitting string where a certain character occurs.
+•	Validation: checking if the string meets a certain criteria, e.g to check whether an email address is in standard format.
+Characters and Character Classes
+Regex special characters are: \. ^ $ ? + [] {} (). Then the Pythons escape characters that are also used in regex: \t.
+Quantifiers 
+Quantifiers in Python are used in regular expressions to specify the number of times a particular character or group of characters should appear in the input text.
+Flags
+Flags are used to tell the regex how to behave when looking for expressions.
+
