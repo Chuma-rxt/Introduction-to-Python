@@ -1,0 +1,119 @@
+Day 1						06 November 2023
+Data Structures
+Data structures refer to the fundamental constructs or ways in which data is organized, stored, and manipulated in a program. Python provide several built-in-data structures including lists, tuples, sets, and dictionaries, as well as support for custom data structures through classes and objects.
+Defining Functions
+Fibonacci series is a sequence of numbers in which each number is a sum of two preceding ones, usually starting with 0 and 1. In Python you can generate Fibonacci series using a loop or recursion.
+Global variables and variables of enclosed functions cannot be directly assigned a value within a function unless, for a global variables named in a global statement, or for variables of enclosing functions, named in a nonlocal statement, although they may be referenced.
+Coming from other languages you might find that fib is not a function but a procedure since it doesn’t return a value. Functions without a return statement do return a value, albeit a rather boring one.
+More on Lists
+Lists is a build-in data structure that is used to store an ordered collection of items. Lists are one of the most versatile and commonly used data structures in Python.
+List data types has some more methods.
+	list.append(x): add an item to the end of the list.
+	list.extend(iterable): extend the list by appending all the items from the iterable.
+	list.insert(i, x): insert an item at a given position. 
+	list.remove(x): remove the first item from the list whose value is equal to x. It raises a ValuError if there is no such item.
+	list.pop([i]): remove the item at the given position in the list. If no index is specified, a.pop() removes and returns the last item in the list.
+	list.clear(): remove all items from the list.
+	list.index(x[start[, end]]): return zero-based index in the list of the first item whose value is equal to x. It raises a ValueError if there is no such item.
+	list.count(x): return the number of times x appears in the list.
+	list.sort(key=None, reverse=False): sort the items of the list in place
+	list.reverse(): reverse the elements of the list in place.
+	list.copy(): return a shallow cop of the list.
+
+Using Lists as stacks and Queues
+The list methods make it very ease to use a list as a stack, where the last element added is the first element retrieved(“last-in, first-out”). To retrieve an item from the top of the stack, use pop() without an explicit index.
+List Comprehensions
+List comprehension provide a concise way of creating a list. 
+ A lists comprehension consists of brackets containing an expression followed by a clause, the zero or more for or if clauses.
+Nested list Comprehensions
+The initial expression in a list comprehension can be any arbitrary expression, including another list comprehension.
+The del statement/ Tuples and Sequences
+The is way of removing an item from the list given its index instead of its value: the del statement. The del statement can also be used to remove slices from a list or clear the entire list.
+del can also be used to delete entire variables. 
+ Sequence data types: 
+	list: are mutable, and their elements are usually homogeneous and arew accessed by iterating over the list.
+	tuple: consists of a number separated by commas. Tuples are always enclosed with parantheses. Tuples are immutable.
+	range
+Sets
+A set is an unordered collection with no duplicate elements. Set objects also support mathematical operations like unions, intersection, difference, and symmetric difference.
+Curly braces or the set() function can be used to create sets. To create an empty set you have to use set(), not {}; the latter creates an empty dictionary.
+Dictionaries
+Dictionaries are indexed by keys, which can be any immutable type; strings and numbers can always be keys. Tuples can be used as keys if they contain only strings, numbers, or tuples; if a tuple contains any mutable object either directly or indirectly, it cannot be used as a key.
+Performing list on a dictionary returns a list of all the keys used in the dictionary, in insertion order (if you want it sorted, just use sorted instead). To check whether a single key is in dictionary, use the in keyword.
+Looping Techniques
+Looping through, the key and corresponding value can be retrieved at the same time using the items() method.
+
+MORE ON CONDITIONS >>>
+Comparisons can be chained. For example, a < b == c tests whether a is less than b and moreover b equals c.
+The Boolean operators and and or are so-called short-circuit operators: their arguments are evaluated from left to right, and evaluation stops as soon as the outcome is determined.
+Comparing Sequences and other types
+The comparison uses lexicographical ordering: first the first two items are compared, and if they differ this determines the outcome of the comparison; if they are equal, the next two items are compared, and so on until the sequence is exhausted.
+Lexicographical ordering for strings uses the Unicode code point number to order individual characters
+
+
+
+Day 2							06 November 2023
+Python List
+Creating List
+A list is created by placing all the items or elements inside square brackets[], separated by comma.
+It can have any number of items and the may be of different types (integer, float, strings etc).
+A list can have also another list within it, this is called a nested list.
+Access List Elements
+We can access the list elements using list index operator []. Indicates the start by 0, so this means having 5 elements will have an index from 0 to 4.
+We cannot use float or other types because they will result in TypeError. The index must an integer.
+Slicing List
+We can access a range of items in a list by using the slicing operator :(colon).
+ 
+
+Add/ Change List Elements
+Lists are mutable, meaning their elements can be changed unlike strings or tuple. We can use the assignment operator = to change an item or a range of items.
+We can also add one item to a list using the append() method or add several items using extend() method.
+We can also use + operator to combine two lists. This is also called concatenation.
+The * operator repeats a list for the given number of times.
+We can use remove() method to remove the given item or pop() method to remove an item at the given index.
+The pop() method removes and returns the last item if the index is not provided. This helps us implement lists as stack.
+List Coprehension: Elegant way to create lists
+A list comprehension consists of an expression followed by for statement inside square brackets.
+ 
+Iterating Through a List
+Using a for loop we can iterate through each item in a list.
+ 
+
+Day 3							07 November 2023
+Errors And Exceptions
+They are used to handle various types of issues or problems that occur during the execution of Python program.
+So they are categorized into two types: Syntax Errors and Exceptions.
+	Syntax errors: also known as parsing errors, occur when the Python interpreter encounters code that violates the languages rules for correct structure. These errors prevent the code from running. They typically involve issues like incorrect indentation, missing colons, or using invalid characters.
+	Exceptions: are runtime errors that occur during the execution of the program. They can occur when the interpreter is trying to divide by zero, accessing a non-existent file, or calling a method on an object that doesn’t support it.
+Raising An Exception
+You can raise an exception explicitly using the ‘raise’ statement. This is useful when you want to signal that an error or exceptional condition has occurred in your code.
+User-defined Exceptions
+Python allows you to create your own exceptions by deriving classes from the standard built-in exceptions. 
+
+
+
+Day 4							07 November 2023
+Python Classes
+A class is a blueprint or a template for creating objects (instances). It defines the structure and behavior of objects of the class. Classes provide a way to model and represent real-world entities, abstract data types, and more.
+Class Definition:
+To define a class, you use the ‘class’ keyword, followed by the class name and a colon. Class names typically use the CamelCase naming convention (starting with an uppercase letter).
+
+
+
+In C++ terminology, class members including the data members are public except the private variables.
+Python Scopes and Namespaces
+A namespace is a container that holds a set of identifiers (variable names, function names, class names, etc) and their corresponding objects. Name space are used to organize and manage names used in your Python code, allowing you to avoid naming conflicts and providing a way to access and reference the various objects.
+Types of namespace in Python:
+	Global Namespace: It contains names defined at the outermost level of the script or module. These names are accessible from anywhere within the script or module.
+	Local Namespace (Function Namespace): Variables and parameters defined within a function are part of the local name space and are only accessible within that function.
+	Enclosing Namespace(Closure Namespace): In Python you can have nested functions. The inner function can access variables from the outer (enclosing) functions namespace. The inner function can also have its own local variables.
+	Built-in Namespace: The build-in name space contains all the built-in functions and objects. These names are always accessible without the need for an import statement. E,g ‘print’, ‘len()’, ‘str()’, ‘list()’
+The namespace containing the built-in names is created when the Python interpreter starts up and is never deleted.
+The global namespace for module is created when the module definition is read in, module namespace also last until the interpreter quits.
+The local namespace for a function is called and deleted when the function return or raises an exception that is not handled within the function.
+A scope is a textual region of a Python program where namespace is directly accessible.
+ Class and Instance Variables
+Instance variables are for data unique to each instance and class variables are for attributes and methods shared by all instances of data loss. 
+Random Remarks
+Data attributes override method attributes with the same name; to avoid accidental name conflicts, which may cause hard-to-find bugs in large programs, it is wise to use some kind of convention that minimizes the chance of conflicts.
+
